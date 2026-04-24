@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andy Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1 class="logo">Andy<span>.</span></h1>
+
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <span class="close-btn" onclick="closemenu()">×</span>
+        </ul>
+
+        <span class="menu-btn" onclick="openmenu()">☰</span>
+      </nav>
+
+      <div class="header-text">
+        <p>Data Analyst | Automation Builder | Cybersecurity Student</p>
+        <h1>Hi, I am <span>Andy</span><br>from North Carolina</h1>
+      </div>
+    </div>
+  </div>
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+
+        <div class="about-col-1">
+          <div class="profile-card">
+            <div class="profile-circle">A</div>
+            <h2>Andy</h2>
+            <p>Data Analytics • HR Automation • Cybersecurity</p>
+          </div>
+        </div>
+
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            I enjoy turning messy workplace data into clean dashboards, automated reports,
+            and useful tracking tools. My work focuses on HR analytics, Excel VBA,
+            Power BI, SQL, Python, and cybersecurity learning.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+            <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+            <p class="tab-links" onclick="opentab('education', event)">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Excel VBA</span><br>Automated trackers, reports, buttons, and dashboards</li>
+              <li><span>Power BI</span><br>Leadership dashboards and trend reporting</li>
+              <li><span>SQL & Python</span><br>Data cleaning, querying, and analysis projects</li>
+              <li><span>Cybersecurity</span><br>Secure coding, WebGoat labs, SQL injection, and XSS practice</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>HR Data Analyst</span><br>Recruitment analytics, vacancy tracking, and dashboard reporting</li>
+              <li><span>Automation Builder</span><br>Created tools to reduce manual tracking and improve data accuracy</li>
+              <li><span>Process Improvement</span><br>Built cleaner workflows for hiring pipeline visibility</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Master’s in Cybersecurity</span><br>Expected completion around 2027</li>
+              <li><span>Bachelor's in Management</span><br>Graduated in 2020
+                <li><span>Minor in Psychology</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+
+      <div class="services-list">
+        <div>
+          <h2>Dashboard Design</h2>
+          <p>
+            I create clear dashboards that show trends, bottlenecks, vacancies,
+            pipeline movement, and leadership level summaries.
+          </p>
+          <a href="#portfolio">Learn more</a>
+        </div>
+
+        <div>
+          <h2>Excel Automation</h2>
+          <p>
+            I build Excel VBA tools that automate reports, organize records,
+            archive closed items, and make tracking easier.
+          </p>
+          <a href="#portfolio">Learn more</a>
+        </div>
+
+        <div>
+          <h2>Cybersecurity Projects</h2>
+          <p>
+            I document hands-on labs and security concepts such as SQL injection,
+            XSS, input validation, and secure system design.
+          </p>
+          <a href="#portfolio">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+
+      <div class="work-list">
+        <div class="work">
+          <div class="work-placeholder">Dashboard</div>
+          <div class="layer">
+            <h3>HR Vacancy Dashboard</h3>
+            <p>
+              A dashboard for tracking vacancies, hiring movement, separations,
+              and recruitment trends.
+            </p>
+            <a href="#">View</a>
+          </div>
+        </div>
+
+        <div class="work">
+          <div class="work-placeholder">Automation</div>
+          <div class="layer">
+            <h3>Recruitment Tracker</h3>
+            <p>
+              An Excel VBA tracker that shows where each candidate is in the process
+              and archives closed records.
+            </p>
+            <a href="#">View</a>
+          </div>
+        </div>
+
+        <div class="work">
+          <div class="work-placeholder">Security</div>
+          <div class="layer">
+            <h3>Cybersecurity Lab Notes</h3>
+            <p>
+              Practice work covering WebGoat, SQL injection, XSS, secure coding,
+              and security design principles.
+            </p>
+            <a href="#">View</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>Email: andylstein@gmail.com</p>
+          <p>GitHub: github.com/andyspyro</p>
+
+          <a href="#" class="btn btn2">Download Resume</a>
+        </div>
+
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright © 2026 Andy. Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
